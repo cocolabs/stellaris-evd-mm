@@ -1,4 +1,5 @@
 ﻿l_english:
+ MAP_MODE_NOT_ENOUGH_INTEL:0 "You do not have enough intel to see this information."
  z_map_mode_economy:0 "Energy Income"
  z_map_mode_economy_desc:0 "Empire Borders will be colored based on their energy credit income."
  z_map_mode_economy_0:0 "§H[This.GetName]§!'s Energy Credit income: §R(0-10)§!"
