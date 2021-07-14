@@ -4,13 +4,20 @@ z_map_mode_economy = {
 	#shortcut = ""
 
 	color = {
+		value = hsv { 0 0 0 1 }
+		custom_tooltip = DIPLOMATIC_MAP_MODE_SAME_EMPIRE
+		condition = {
+			is_same_empire = FROM
+		}
+	}
+######
+	color = {
 		value = hsv { 0.7 0.9 1 1 }
 		custom_tooltip = z_map_mode_economy_10000
 		condition = {
 			income > 10000
 		}
 	}
-######
 	color = {
 		value = hsv { 0.67 0.9 1 1 }
 		custom_tooltip = z_map_mode_economy_9000
