@@ -12,10 +12,3 @@ spriteTypes = {
 		noOfFrames = 2
 	}
 }
-spriteTypes = {
-	spriteType = {
-		name = z_map_mode_authority
-		texturefile = "gfx/interface/icons/z_map_mode_authority.dds"
-		noOfFrames = 2
-	}
-}
