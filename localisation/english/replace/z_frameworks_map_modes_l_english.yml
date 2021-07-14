@@ -25,3 +25,7 @@
  z_map_mode_science_more_4:0 "§G[From.GetName]§! is living in the stone age compared to §Y[This.GetName]§!"
 
  z_map_mode_rivals:0 "Rival Map Mode"
+ z_map_mode_rivals_desc:0 "Countries we rival and are rivaling us show §Yyellow§!, countries we rival show §Bblue§!, countries rivaling us show §Rred§!."
+ z_map_mode_rivals_both:0 "§Y[This.GetName]§! and §G[From.GetName]§! both rivaling each other." 
+ z_map_mode_rivals_ours:0 "§Y[This.GetName]§! is §G[From.GetName]§!'s rival."
+ z_map_mode_rivals_their:0 "§Y[This.GetName]§! is §G[From.GetName]§!'s rival."
