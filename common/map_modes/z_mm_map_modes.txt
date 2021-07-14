@@ -11,6 +11,27 @@ z_map_mode_fleet = {
 			is_same_empire = FROM
 		}
 	}
+	color = {
+		value = hsv { 0 0 0 1 }
+		custom_tooltip = MAP_MODE_NOT_ENOUGH_INTEL
+		condition = {
+			FROMFROM = {
+				NOT = {
+					# got the intel
+					has_intel_level = {
+						who = PREV.FROM
+						category = military
+						level >= 1
+					}
+					has_intel_level = {
+						who = PREV
+						category = military
+						level >= 1
+					}
+				}
+			}
+		}
+	}
 ######
 	color = {
 		value = hsv { 0.56 0.84 1 1 }
@@ -66,6 +87,27 @@ z_map_mode_science = {
 		custom_tooltip = DIPLOMATIC_MAP_MODE_SAME_EMPIRE
 		condition = {
 			is_same_empire = from
+		}
+	}
+	color = {
+		value = hsv { 0 0 0 1 }
+		custom_tooltip = MAP_MODE_NOT_ENOUGH_INTEL
+		condition = {
+			FROMFROM = {
+				NOT = {
+					# got the intel
+					has_intel_level = {
+						who = PREV.FROM
+						category = technology
+						level >= 1
+					}
+					has_intel_level = {
+						who = PREV
+						category = technology
+						level >= 1
+					}
+				}
+			}
 		}
 	}
 ###### more
