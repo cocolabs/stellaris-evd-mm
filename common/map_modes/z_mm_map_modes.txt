@@ -1,3 +1,18 @@
+#########################
+### List of map modes ###
+#########################
+# Fleet Power
+# Technology
+# Rivals
+# Border Relationship
+# Claims
+# Population
+# Economy
+
+####################
+#  Fleet Map Mode  #
+####################
+
 z_map_mode_fleet = {
 	icon = GFX_z_map_mode_fleet
 	enable_terra_incognita = yes
@@ -76,6 +91,10 @@ z_map_mode_fleet = {
 		}
 	}
 }
+
+#########################
+#  Technology Map Mode  #
+#########################
 
 z_map_mode_science = {
 	icon = GFX_z_map_mode_science
@@ -202,6 +221,10 @@ z_map_mode_science = {
 	}
 }
 
+#######################
+#   Rivals Map Mode   #
+#######################
+
 z_map_mode_rivals = {
 	icon = GFX_z_map_mode_rivals
 	enable_terra_incognita = yes
@@ -246,6 +269,10 @@ z_map_mode_rivals = {
 		}
 	}
 }
+
+########################
+#   Borders Map Mode   #
+########################
 
 z_map_mode_borders = {
 	icon = GFX_z_map_mode_borders
@@ -292,6 +319,10 @@ z_map_mode_borders = {
 	}
 }
 
+#######################
+#   Claims Map Mode   #
+#######################
+
 z_map_mode_claims = {
 	icon = GFX_z_map_mode_claims
 	enable_terra_incognita = yes
@@ -337,6 +368,10 @@ z_map_mode_claims = {
 		}
 	}
 }
+
+#########################
+#  Population Map Mode  #
+#########################
 
 z_map_mode_population = {
 	icon = z_map_mode_population
@@ -491,6 +526,10 @@ z_map_mode_population = {
 		}
 	}
 }
+
+######################
+#  Economy Map Mode  #
+######################
 
 z_map_mode_economy = {
 	icon = z_map_mode_economy
