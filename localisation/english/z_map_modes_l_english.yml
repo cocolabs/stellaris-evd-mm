@@ -1,5 +1,6 @@
 ﻿l_english:
  MAP_MODE_NOT_ENOUGH_INTEL:0 "You do not have enough intel to see this information."
+ 
  z_map_mode_economy:0 "Energy Income"
  z_map_mode_economy_desc:0 "Empire Borders will be colored based on their energy credit income."
  z_map_mode_economy_0:0 "§H[This.GetName]§!'s Energy Credit income: §R(0-10)§!"
@@ -22,6 +23,7 @@
  z_map_mode_economy_8000:0 "§H[This.GetName]§!'s Energy Credit income: §G(8k-9k)§!"
  z_map_mode_economy_9000:0 "§H[This.GetName]§!'s Energy Credit income: §G(9k-10k)§!"
  z_map_mode_economy_10000:0 "§H[This.GetName]§!'s Energy Credit income: §P(10k+)§!"
+ 
  z_map_mode_population:0 "Population"
  z_map_mode_population_desc:0 "Empire Borders will be colored based on empire population."
  z_map_mode_population_0:0 "§H[This.GetName]§!'s Population: §R(0-10)§!"
@@ -44,3 +46,4 @@
  z_map_mode_population_8000:0 "§H[This.GetName]§!'s Population: §G(8k-9k)§!"
  z_map_mode_population_9000:0 "§H[This.GetName]§!'s Population: §G(9k-10k)§!"
  z_map_mode_population_10000:0 "§H[This.GetName]§!'s Population: §P(10k+)§!"
+ 
