@@ -3,4 +3,4 @@ tags={
 	"Graphics"
 }
 name="Extended Vanilla Design - Map Modes"
-supported_version="2.7.*"
+supported_version="3.0.3"
