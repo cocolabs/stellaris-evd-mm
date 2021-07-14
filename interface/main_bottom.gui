@@ -500,7 +500,7 @@ guiTypes = {
 			iconType = {
 				name = "toggle_mapmode_icon_trade_routes"
 				spriteType = "GFX_map_mode_trade_routes"
-				position = { x = -346 y = -103 }
+				position = { x = -313 y = -104 }
 				orientation = "LOWER_RIGHT"
 				alwaystransparent = yes
 			}
@@ -508,7 +508,7 @@ guiTypes = {
  			buttonType = {
 				name = "toggle_mapmode_trade_routes"
 				quadTextureSprite = "GFX_button_29_animated"
-				position = { x= -358 y = -115  }
+				position = { x= -325 y = -116  }
 				pdx_tooltip = "TOGGLE_MAPMODE_TRADE_ROUTES_INFO"
 				pdx_tooltip_anchor_offset = { x= 0 y = @tt_offset_y }
 				pdx_tooltip_anchor_orientation = lower_left
