@@ -18,7 +18,6 @@ z_map_mode_fleet = {
 	enable_terra_incognita = yes
 	#shortcut = ""
 
-######
 	color = {
 		value = hsv { 0 0 0 1 }
 		custom_tooltip = DIPLOMATIC_MAP_MODE_SAME_EMPIRE
@@ -32,7 +31,6 @@ z_map_mode_fleet = {
 		condition = {
 			FROMFROM = {
 				NOT = {
-					# got the intel
 					has_intel_level = {
 						who = PREV.FROM
 						category = military
@@ -47,40 +45,49 @@ z_map_mode_fleet = {
 			}
 		}
 	}
-######
 	color = {
 		value = hsv { 0.56 0.84 1 1 }
 		custom_tooltip = z_map_mode_fleet_negligible
 		condition = {
-			relative_power = { who = from category = fleet value < pathetic }
+			relative_power = { 
+				who = from category = fleet value < pathetic 
+			}
 		}
 	}
 	color = {
 		value = hsv { 0.44 0.84 1 1 }
 		custom_tooltip = z_map_mode_fleet_pathetic
 		condition = {
-			relative_power = { who = from category = fleet value < inferior }
+			relative_power = { 
+				who = from category = fleet value < inferior 
+			}
 		}
 	}
 	color = {
 		value = hsv { 0.32 0.84 1 1 }
 		custom_tooltip = z_map_mode_fleet_inferior
 		condition = {
-			relative_power = { who = from category = fleet value < equivalent }
+			relative_power = { 
+				who = from category = fleet value < equivalent 
+			}
 		}
 	}
 	color = {
 		value = hsv { 0.16 0.84 1 1 }
 		custom_tooltip = z_map_mode_fleet_equivalent
 		condition = {
-			relative_power = { who = from category = fleet value < superior }
+			relative_power = { 
+				who = from category = fleet value < superior 
+			}
 		}
 	}
 	color = {
 		value = hsv { 0.08 0.84 1 1 }
 		custom_tooltip = z_map_mode_fleet_superior
 		condition = {
-			relative_power = { who = from category = fleet value < overwhelming }
+			relative_power = { 
+				who = from category = fleet value < overwhelming 
+			}
 		}
 	}
 	color = {
@@ -114,7 +121,6 @@ z_map_mode_science = {
 		condition = {
 			FROMFROM = {
 				NOT = {
-					# got the intel
 					has_intel_level = {
 						who = PREV.FROM
 						category = technology
@@ -129,7 +135,6 @@ z_map_mode_science = {
 			}
 		}
 	}
-###### more
 	color = {
 		value = hsv { 0.04 0.9 1 1 }
 		custom_tooltip = z_map_mode_science_more_4
@@ -229,7 +234,7 @@ z_map_mode_rivals = {
 	icon = GFX_z_map_mode_rivals
 	enable_terra_incognita = yes
 	#shortcut = ""
-######
+
 	color = {
 		value = hsv { 0.32 0.9 1 1 }
 		custom_tooltip = DIPLOMATIC_MAP_MODE_SAME_EMPIRE
@@ -237,7 +242,6 @@ z_map_mode_rivals = {
 			is_same_empire = FROM
 		}
 	}
-######
 	color = {
 		value = hsv { 0.16 0.9 1 1 }
 		custom_tooltip = z_map_mode_rivals_both
@@ -260,7 +264,6 @@ z_map_mode_rivals = {
 			has_rival = FROM
 		}
 	}
-######
 	color = {
 		value = hsv { 0 0 0.5 1 }
 		custom_tooltip = z_map_mode_rivals_none
@@ -278,7 +281,7 @@ z_map_mode_borders = {
 	icon = GFX_z_map_mode_borders
 	enable_terra_incognita = yes
 	#shortcut = ""
-######
+
 	color = {
 		value = hsv { 0.32 0.9 1 1 }
 		custom_tooltip = DIPLOMATIC_MAP_MODE_SAME_EMPIRE
@@ -286,7 +289,6 @@ z_map_mode_borders = {
 			is_same_empire = FROM
 		}
 	}
-######
 	color = {
 		value = hsv { 0.16 0.9 1 1 }
 		custom_tooltip = z_map_mode_borders_both
@@ -309,7 +311,6 @@ z_map_mode_borders = {
 			has_closed_borders = FROM
 		}
 	}
-######
 	color = {
 		value = hsv { 0.32 0 0.5 1 }
 		custom_tooltip = z_map_mode_borders_none
@@ -328,7 +329,7 @@ z_map_mode_claims = {
 	enable_terra_incognita = yes
 	display_claims = yes
 	#shortcut = ""
-######
+
 	color = {
 		value = hsv { 0.32 0.9 1 1 }
 		custom_tooltip = DIPLOMATIC_MAP_MODE_SAME_EMPIRE
@@ -336,7 +337,6 @@ z_map_mode_claims = {
 			is_same_empire = FROM
 		}
 	}
-######
 	color = {
 		value = hsv { 0.16 0.9 1 1 }
 		custom_tooltip = z_map_mode_claims_both
@@ -359,7 +359,6 @@ z_map_mode_claims = {
 			has_claim = FROM
 		}
 	}
-######
 	color = {
 		value = hsv { 0 0 0.5 1 }
 		custom_tooltip = z_map_mode_claims_none
@@ -385,7 +384,6 @@ z_map_mode_population = {
 			num_pops > 10000
 		}
 	}
-######
 	color = {
 		value = hsv { 0.67 0.9 1 1 }
 		custom_tooltip = z_map_mode_population_9000
@@ -407,7 +405,6 @@ z_map_mode_population = {
 			num_pops > 7000
 		}
 	}
-######
 	color = {
 		value = hsv { 0.58 0.9 1 1 }
 		custom_tooltip = z_map_mode_population_6000
@@ -429,7 +426,6 @@ z_map_mode_population = {
 			num_pops > 4500
 		}
 	}
-######
 	color = {
 		value = hsv { 0.49 0.9 1 1 }
 		custom_tooltip = z_map_mode_population_4000
@@ -451,7 +447,6 @@ z_map_mode_population = {
 			num_pops > 3000
 		}
 	}
-######
 	color = {
 		value = hsv { 0.4 0.9 1 1 }
 		custom_tooltip = z_map_mode_population_2500
@@ -473,7 +468,6 @@ z_map_mode_population = {
 			num_pops > 1500
 		}
 	}
-######
 	color = {
 		value = hsv { 0.31 0.9 1 1 }
 		custom_tooltip = z_map_mode_population_1000
@@ -495,7 +489,6 @@ z_map_mode_population = {
 			num_pops > 500
 		}
 	}
-######
 	color = {
 		value = hsv { 0.22 0.9 1 1 }
 		custom_tooltip = z_map_mode_population_250
@@ -517,7 +510,6 @@ z_map_mode_population = {
 			num_pops > 10
 		}
 	}
-######
 	color = {
 		value = hsv { 0 0 0.5 1 }
 		custom_tooltip = z_map_mode_population_0
@@ -564,7 +556,6 @@ z_map_mode_economy = {
 			}
 		}
 	}
-######
 	color = {
 		value = hsv { 0.7 0.9 1 1 }
 		custom_tooltip = z_map_mode_economy_10000
@@ -593,7 +584,6 @@ z_map_mode_economy = {
 			income > 7000
 		}
 	}
-######
 	color = {
 		value = hsv { 0.58 0.9 1 1 }
 		custom_tooltip = z_map_mode_economy_6000
@@ -615,7 +605,6 @@ z_map_mode_economy = {
 			income > 4500
 		}
 	}
-######
 	color = {
 		value = hsv { 0.49 0.9 1 1 }
 		custom_tooltip = z_map_mode_economy_4000
@@ -637,7 +626,6 @@ z_map_mode_economy = {
 			income > 3000
 		}
 	}
-######
 	color = {
 		value = hsv { 0.4 0.9 1 1 }
 		custom_tooltip = z_map_mode_economy_2500
@@ -659,7 +647,6 @@ z_map_mode_economy = {
 			income > 1500
 		}
 	}
-######
 	color = {
 		value = hsv { 0.31 0.9 1 1 }
 		custom_tooltip = z_map_mode_economy_1000
@@ -681,7 +668,6 @@ z_map_mode_economy = {
 			income > 500
 		}
 	}
-######
 	color = {
 		value = hsv { 0.22 0.9 1 1 }
 		custom_tooltip = z_map_mode_economy_250
@@ -703,7 +689,6 @@ z_map_mode_economy = {
 			income > 10
 		}
 	}
-######
 	color = {
 		value = hsv { 0 0 0.5 1 }
 		custom_tooltip = z_map_mode_economy_0
