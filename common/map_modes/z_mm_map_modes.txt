@@ -19,7 +19,7 @@ z_map_mode_fleet = {
 	#shortcut = ""
 
 	color = {
-		value = hsv { 0 0 0 1 }
+		value = hsv { 0.580 1.0 0.8 1.0 }
 		custom_tooltip = DIPLOMATIC_MAP_MODE_SAME_EMPIRE
 		condition = {
 			is_same_empire = FROM
@@ -109,7 +109,7 @@ z_map_mode_science = {
 	#shortcut = ""
 
 	color = {
-		value = hsv { 0 0 0 1 }
+		value = hsv { 0.580 1.0 0.8 1.0 }
 		custom_tooltip = DIPLOMATIC_MAP_MODE_SAME_EMPIRE
 		condition = {
 			is_same_empire = from
@@ -529,7 +529,7 @@ z_map_mode_economy = {
 	#shortcut = ""
 
 	color = {
-		value = hsv { 0 0 0 1 }
+		value = hsv { 0.580 1.0 0.8 1.0 }
 		custom_tooltip = DIPLOMATIC_MAP_MODE_SAME_EMPIRE
 		condition = {
 			is_same_empire = FROM
