@@ -10,6 +10,27 @@ z_map_mode_economy = {
 			is_same_empire = FROM
 		}
 	}
+	color = {
+		value = hsv { 0 0 0 1 }
+		custom_tooltip = MAP_MODE_NOT_ENOUGH_INTEL
+		condition = {
+			FROMFROM = {
+				NOT = {
+					# got the intel
+					has_intel_level = {
+						who = PREV.FROM
+						category = economy
+						level >= 1
+					}
+					has_intel_level = {
+						who = PREV
+						category = economy
+						level >= 1
+					}
+				}
+			}
+		}
+	}
 ######
 	color = {
 		value = hsv { 0.7 0.9 1 1 }
